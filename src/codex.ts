@@ -112,7 +112,7 @@ export async function readQuota(): Promise<QuotaSnapshot> {
   child.stderr.resume();
   try {
     await request('initialize', {
-      clientInfo: { name: 'quotacraft', version: '0.1.0' },
+      clientInfo: { name: 'quotacraft', version: '0.1.1' },
       capabilities: { experimentalApi: false },
     });
     child.stdin.write(JSON.stringify({ method: 'initialized' }) + '\n');

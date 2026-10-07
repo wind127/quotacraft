@@ -5,7 +5,7 @@ import { Service } from './service.js';
 import { taskInput, type Task } from './domain.js';
 
 export async function startMcp(service: Service) {
-  const server = new McpServer({ name: 'quotacraft', version: '0.1.0' });
+  const server = new McpServer({ name: 'quotacraft', version: '0.1.1' });
   const output = (data: unknown) => ({
     content: [{ type: 'text' as const, text: JSON.stringify(data) }],
   });

@@ -234,7 +234,7 @@ function App() {
           <span className="online-dot" /> 本地服务已连接
         </div>
         <div className="sidebar-footer">
-          v0.1.0 <span>OPEN SOURCE</span>
+          v0.1.1 <span>OPEN SOURCE</span>
         </div>
       </aside>
       <div className="workspace">

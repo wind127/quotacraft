@@ -32,6 +32,7 @@ test('create, budget, checkpoint, resume, accept, and inspect evidence', async (
   await page.getByLabel('确认已满足验收要求', { exact: false }).check();
   await page.getByLabel('观测到的额度成本', { exact: false }).fill('2.5');
   await page.getByRole('button', { name: '保存并验收' }).click();
+  await expect(page.getByRole('status')).toContainText('已记录验收通过');
   await page.reload();
   await page.getByRole('button', { name: '策略成绩单' }).click();
   await expect(page.getByText(name, { exact: true })).toBeVisible();

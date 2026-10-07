@@ -63,6 +63,6 @@ E2E uses Edge locally and Chromium in CI. No model calls are needed by the autom
 
 ## Honest scope
 
-v0.1.0 is an MVP. Task costs are user estimates in quota percentage points, not tokens. Account-wide changes during execution are not exact task attribution. Forecasts are experimental, uncalibrated and never authorize mandatory work on speculative future capacity. Resumption uses a fresh session plus checkpoint, rather than claiming lossless conversation continuity. Notifications require the browser page to remain open. Official X API access is optional and may incur provider fees.
+v0.1.1 is an MVP. Task costs are user estimates in quota percentage points, not tokens. Account-wide changes during execution are not exact task attribution. Forecasts are experimental, uncalibrated and never authorize mandatory work on speculative future capacity. Resumption uses a fresh session plus checkpoint, rather than claiming lossless conversation continuity. Notifications require the browser page to remain open. Official X API access is optional and may incur provider fees.
 
 MIT. Independently developed; not affiliated with OpenAI.

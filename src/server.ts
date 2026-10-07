@@ -35,7 +35,7 @@ export function createApp(service: Service, port: number, runner = new Runner(se
   app.use(express.json({ limit: '256kb' }));
   app.get('/api/state', (_req, res) => res.json(service.snapshot()));
   app.get('/api/health', (_req, res) =>
-    res.json({ ok: true, version: '0.1.0', demo: service.demo }),
+    res.json({ ok: true, version: '0.1.1', demo: service.demo }),
   );
   app.post('/api/tasks', (req, res) => res.status(201).json(service.addTask(req.body)));
   app.patch('/api/tasks/:id', (req, res) => {

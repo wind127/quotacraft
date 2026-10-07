@@ -2,7 +2,9 @@
 
 **把额度留给重要的事。** 本地优先的 Codex 额度调度助手：按照任务重要性、截止时间、成本区间和收尾预算安排工作，在额度恢复后继续推进，并记录真正通过验收的成果。
 
-[English](README.en.md) · [架构与接口](docs/ARCHITECTURE.md) · [预测方法](docs/FORECAST.md) · [安全与边界](SECURITY.md) · [v0.1.0](docs/RELEASE.md)
+[English](README.en.md) · [架构与接口](docs/ARCHITECTURE.md) · [预测方法](docs/FORECAST.md) · [安全与边界](SECURITY.md) · [v0.1.1](docs/RELEASE.md)
+
+[![CI](https://github.com/wind127/quotacraft/actions/workflows/ci.yml/badge.svg)](https://github.com/wind127/quotacraft/actions/workflows/ci.yml)
 
 ![QuotaCraft 演示控制台，所有任务和额度均为合成数据](docs/assets/dashboard-desktop.png)
 
@@ -132,7 +134,7 @@ npm run test:e2e    # 桌面和 375px 视口浏览器验收
 
 ## 当前边界
 
-- 这是可运行的 **v0.1.0 MVP**，目标为 Codex / ChatGPT Work 的可观测订阅额度，不宣称覆盖 ChatGPT 网页上的所有模型限额。
+- 这是可运行的 **v0.1.1 MVP**，目标为 Codex / ChatGPT Work 的可观测订阅额度，不宣称覆盖 ChatGPT 网页上的所有模型限额。
 - 成本区间目前由用户填写；短时间、同账号、同周期的连续读数用于估算消耗速度，尚未自动学习单任务成本模型。
 - 模型价格不等于订阅额度权重，切换低价模型不保证按比例节省订阅额度。每个窗口的真实消耗仍以官方读数为准。
 - 执行中观测的额度变化可能包括其他设备消耗，不是精确单任务归因。
