@@ -1,0 +1,14 @@
+{
+  "title": "为登录回调补回归测试",
+  "project": "my-app",
+  "prompt": "在现有登录回调测试中补充过期会话的回归用例，保留既有行为，运行相关测试并报告结果。",
+  "workspace": "",
+  "priority": "must",
+  "deadline": null,
+  "estimateLow": 2,
+  "estimateHigh": 5,
+  "finishReserve": 2,
+  "minutes": 30,
+  "quality": "high",
+  "acceptance": "新增用例覆盖过期会话，相关回归测试通过。"
+}

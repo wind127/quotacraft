@@ -1,0 +1,14 @@
+node_modules/
+dist/
+web-dist/
+.data/
+.tools/
+.env
+.env.*
+!.env.example
+*.sqlite*
+test-results/
+playwright-report/
+coverage/
+*.log
+*.tgz

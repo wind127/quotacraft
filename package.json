@@ -1,0 +1,46 @@
+{
+  "name": "quotacraft",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Local-first, deadline-aware quota orchestration for Codex.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "tsx src/cli.ts serve --dev",
+    "demo": "tsx src/cli.ts serve --demo --dev",
+    "build": "tsc -p tsconfig.server.json && vite build",
+    "start": "node dist/cli.js serve",
+    "start:demo": "node dist/cli.js serve --demo",
+    "mcp": "node dist/cli.js mcp",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "npm run typecheck && npm test && npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "express": "^5.2.1",
+    "lucide-react": "^1.52.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.20.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "prettier": "^3.9.9",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.3",
+    "vitest": "^5.0.3"
+  }
+}
