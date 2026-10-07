@@ -17,6 +17,16 @@
 - **重置有证据层级**：正常周期恢复、Tibo 公开信号、赠送重置次数和本账号额度恢复分别记录。概率、预告和账号观测不混为一谈。
 - **Web + CLI + MCP**：使用同一个本地 SQLite 数据库，无需 OpenAI API Key，不读取 `auth.json`，不安装系统后台任务。
 
+## 一键安装部署 Prompt
+
+复制以下 prompt 给有终端执行权限的 AI 编程助手（如 Codex）：
+
+```text
+请在本机安装并启动 QuotaCraft：https://github.com/wind127/quotacraft。
+检查并补齐 Git 和 Node.js 22.13+；克隆到 quotacraft 目录（已有则复用并保留本地改动），执行 npm ci 和 npm run build。Codex CLI 已安装且已登录时用 npm start，否则先用 npm run start:demo，并告知接入真实额度的下一步。
+在后台启动，设置 QUOTACRAFT_ALLOW_EXEC=0；4318 被占用时通过 QUOTACRAFT_PORT 选择空闲端口。确认 /api/health 返回 ok: true，打开 http://127.0.0.1:<端口>，最后报告安装路径、访问地址及停止、再次启动的方法。
+```
+
 ## 快速开始
 
 需要 **Node.js 22.13+**。真实额度需要已安装的 [Codex CLI](https://learn.chatgpt.com/docs/cli) 并通过 `codex login` 使用 ChatGPT 账号登录。
